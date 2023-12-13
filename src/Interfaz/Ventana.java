@@ -50,6 +50,7 @@ public class Ventana extends javax.swing.JFrame {
         subMenuPanel1 = new com.raven.menu.SubMenuPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextPane1 = new javax.swing.JTextPane();
+        jPanel1 = new javax.swing.JPanel();
         jMenuBar2 = new javax.swing.JMenuBar();
         jMenu3 = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
@@ -79,13 +80,23 @@ public class Ventana extends javax.swing.JFrame {
 
         menuItem6.setText("menuItem6");
         menuItem6.setMenuModel(new javax.swing.AbstractListModel() {
-            String[] strings = { "Codigo Fuente", "Diseño", " " };
+            String[] strings = { "Tabla de simbolos", "Diseño", " " };
             public int getSize() { return strings.length; }
             public Object getElementAt(int i) { return strings[i]; }
+        });
+        menuItem6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuItem6ActionPerformed(evt);
+            }
         });
         menu3.add(menuItem6);
 
         menuItem7.setText("menuItem7");
+        menuItem7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuItem7ActionPerformed(evt);
+            }
+        });
         menu3.add(menuItem7);
 
         menuItem8.setText("menuItem8");
@@ -119,6 +130,8 @@ public class Ventana extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane1);
         jScrollPane1.setBounds(0, 670, 1280, 140);
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(260, 0, 1020, 670);
 
         jMenu3.setText("File");
         jMenuBar2.add(jMenu3);
@@ -133,6 +146,14 @@ public class Ventana extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void menuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItem6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menuItem6ActionPerformed
+
+    private void menuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItem7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menuItem7ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -178,6 +199,7 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuBar jMenuBar2;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextPane jTextPane1;
     private com.raven.menu.Menu menu1;
